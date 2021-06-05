@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Passerelle Numérique</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="logo__container">
+			<a href="index.html"><img class="logo  bounceInLeft" src="image/logo_cropped.png" alt="logo_passerelle_numerique"></a>
+		</div>
+		<nav>
+			<div class="menu">
+				<ul class="menu__items">
+					<li>
+						<p><a href="html.html">HTML</a></p>
+							<ul class="submenu submenu__html">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+					<li>
+						<p><a href="css.html">CSS</a></p>
+							<ul class="submenu submenu__css">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+					<li>
+						<p><a href="javascript.html">JavaScript</a></p>
+							<ul class="submenu submenu__js">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+					<li>
+						<p><a href="webdesign.html">WebDesign</a></p>
+							<ul class="submenu submenu__webDesign">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+					<li>
+						<p><a href="framework.html">Framework</a></p>
+							<ul class="submenu submenu__framework">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	<section class="intro--centre">
+	  	<article>
+	  		<img src="image/HTML5_Logo_512.png" alt="logo_html">
+		  	<h2>Introduction au HTML</h2>
+			<p>Le <strong>HTML</strong> est un format de fichier pouvant être lu par un <strong>navigateur</strong> (Firefox, Google Chrome, Edge...) ce n'est pas un langage de programmation à proprement parler, il s'agit plutôt d'un <strong>langage de description</strong>.<br>
+			Une fois que le document est chargé dans le navigateur, l'utilisateur ne peut pas modifier le document.<br>
+        	Le <strong>HTML</strong> utilise un système de <strong>balise</strong> pour structuré le document.</p>
+		</article>
+	</section>
+
+	<section class="structure">
+	  <article class="structure__html--left">
+		  <h3>Structure d'un document HTML</h3>
+		  <p>Avant toute chose, il nous faut connaitre la façon dont se structure un document :</p>
+			<img src="image/structurehtml.png" alt="structure">
+			<p>La premiere ligne est le <code><em>&lt;!DOCTYPE html&gt;</em></code>, c'est une balise indispensable pour rendre le document compatible pour tout les navigateur.
+				Apres le <strong>DOCTYPE</strong> viens la balise <code><em>&lt;html&gt;&lt;/html&gt;</em></code>, elle encadre le contenu du document <strong>HTML</strong>.
+				La balise <strong>HTML</strong> contiens deux autres balises, le <code><em>&lt;head&gt;&lt;/head&gt;</em></code> et le <code><em>&lt;body&gt;&lt;/body&gt;</em></code>.<br>
+				La balise <strong>head</strong> vas contenir tout l'en-tete du document et <strong>body</strong> le "corps" du document (contenu de la page web).</p>
+			<h3>L'indentation</h3>
+			<p><strong>Indenter</strong> correspond à créer des <strong>retraits</strong> en début de ligne de façon <strong>cohérente</strong> et <strong>logique</strong>.<br>
+          	On effectue ces retraits lorsque l'on <strong>insert</strong> un élément à l'<strong>interieur</strong> d'un autre, par exemple : <br>
+          	<code><em>&lt;body&gt;<br>
+          		&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt;<br>
+          		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>
+          		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
+          		&nbsp;&nbsp;&nbsp;&nbsp;&lt;/header&gt;<br>
+          		&lt;/body&gt;</em></code><br>
+          	Indenter va nous permettre d’avoir un code plus <strong>propre</strong> et plus <strong>lisible</strong>, donc plus compréhensible.<br>
+          	Indenter permet également de plus facilement détecter les <strong>erreurs potentielles</strong> dans un code.<br>
+          	Cela nous permet aussi de <strong>discerner plus facilement</strong> les différents éléments ou parties de code.</p>
+    </article>
+
+	<article class="structure__html--right">
+		<h3> Balise HTML </h3>
+			<img src="image/balise.jpg"alt="balise">
+			<p>Une <strong>balise</strong> est un élément que l'on vas ajouter au contenu pour lui indiquer de quelle maniere l'afficher.
+           		Elle n'est pas afficher par le navigateur, elle est seulement <strong>interprété</strong>.<br>
+           		Une balise peut aussi comporté un ou plusieurs <strong>attributs</strong>.<br>
+				Il existe deux types de balise.</p>
+		<ul>
+			<li>Les balises simple:
+				<p>Ce sont des balises qui sont dite vide, elle ne contienne aucune autre balise <strong>HTML</strong>. Ces balise n'ont <strong>pas besoin d’être fermé</strong>, on les appelles balise auto fermante.</p>
+			</li>
+			<li>Les balises doubles:
+				<p>Les balise doubles sont dites <strong>ouvrante/fermant</strong>, elle nécessite deux balises, une ouvrante et une fermante dans lesquelles on vas mettre d'autres balises ou du texte.
+           		La balise fermante est identique à la balise ouvrante, la seule difference est qu'elle contient un "/" pour indiquer qu'on la ferme.</p>
+        	</li>
+		 </ul>
+   	</article>
+ </section>
+
+ <section class="balise">
+   	<article class="balise__article">
+		<h3>Balises couramment utilisée</h3>
+			<h4>Les titres</h4>
+				<img src="image/titres.png" alt="image_titre">
+				<p>Ces balises permettent de définir des <strong>titres</strong> de différents niveaux <code><em>&lt;h1&gt;&lt;/h1&gt;</em></code> pour les <strong>grands titres</strong> et <code><em>&lt;h6&gt;&lt;/h6&gt;</em></code> pour les <strong>titres des sections très spécifiques</strong>.<br>
+				Ils sont affichés par défauts du plus grand au plus petit et en gras.</p>
+
+			<h4>Les paragraphes</h4>
+				<code ><em class="liste-balise">&lt;p&gt;&lt;/p&gt;</em></code>
+			    <p>Cette balise permet de contenir un <strong>paragraphe</strong><br>
+			    <code><em>&lt;p&gt;Je suis un paragraphe !&lt;/p&gt;</em></code><br> donne :<br>
+			    Je suis un paragraphe !</p>
+
+			<h4>Les liens</h4>
+				<code><em class="liste-balise">&lt;a&gt;&lt;/a&gt;</em></code>
+				<p>Cette balise contient des <strong>liens</strong> vers des <strong>ressources exterieures</strong> (autres liens, sites web...).<br>
+              	Elle contient le texte qui sera utilisé pour le lien, l'attribut <strong>href</strong> de cet élément est utilisé pour définir l'<strong>URL</strong> cible, par exemple il faut taper :<br>
+              	<code><em>&lt;a href="https://www.google.fr/&gt;La page d'accueil de Google&lt;/a&gt;</em></code><br> pour obtenir ceci :<br> <a href="https://www.google.fr/">La page d'accueil de Google</a></p><br>
+
+			<h4>Les images</h4>
+				<code><em class="liste-balise">&lt;img&gt;</em></code>
+				<p>Cette balise permet d'insérer des <strong>images</strong> dans le document <strong>HTML</strong>.<br>
+				Pour cela il faut indiquer le chemin de l'image que l'on veut afficher avec l'attribut <strong>src</strong> et <strong>alt</strong> pour décrire l'image et aider les moteurs de recherches à mieu faire leur travail.<br>
+				Par exemple pour afficher l'image ci dessous, il faut écrire ceci :<br>
+				<code><em>&lt;img src="image/ourson.jpg" alt="ourson"&gt;</em></code><br></p>
+				<img src="image/ourson.jpg" alt="ourson">
+
+
+			<h4>Les listes</h4>
+				<code><em class="liste-balise">&lt;ul&gt;&lt;/ul&gt;</em><br>
+				<em class="liste-balise">&lt;ol&gt;&lt;/ol&gt;</em><br>
+				<em class="liste-balise">&lt;li&gt;&lt;/li&gt;</em>
+				</code>
+				<p> Ces balises sont utilisées pour créer des <strong>listes</strong>.<br>
+				<code><em>&lt;ul&gt;&lt;/ul&gt;</em></code> permet de définir une liste à puce <strong>non-ordonnée</strong> et <code><em>&lt;ol&gt;&lt;/ol&gt;</em></code> de définir une liste <strong>ordonnée</strong>.<br>
+				Pour chacune de ces listes, ce sera la balise <code><em>&lt;li&gt;&lt;/li&gt;</em></code> qui permettra de définir un élément de la liste.</p>
+
+			<h4>La mise en valeur</h4>
+				<code><em class="liste-balise">&lt;strong&gt;&lt;/strong&gt;</em><br>
+				<em class="liste-balise">&lt;em&gt;&lt;/em&gt;</em><br>
+				<em class="liste-balise">&lt;mark&gt;&lt;/mark&gt;</em><br>
+				</code>
+				<p>Ces balises servent à mettre en avant un élément important dans un texte, elles ont chacune un comportement par défault interpréter par le navigateur, par exemple la balise <code><em>&lt;strong&gt;&lt;/strong&gt;</em></code> est souvent interpréter en gras, mais attention cela ne veut pas dire que notre élément est défini en gras, cela se fera avec le CSS.<br></p>
+
+			<h4>Le retour à la ligne</h4>
+				<code><em class="liste-balise">&lt;br&gt;</em></code>
+				<p>La balise <code><em>&lt;br&gt;</em></code> est surtout utilisé pour faire un retour à la ligne dans un texte, attention à ne surtout pas utilisé pour espacer des éléments entre eux, ce n'est pas recommandé.</p>
+
+
+		 </article>
+   </section>
+   <section class="type-balise">
+   		<article>
+   			<h3>Les balises de type Bloc</h3>
+   			<img src="image/block.png" alt="image_bloc">
+   			<p>Les balises de type blocs sont des balises qui prennent toute l'espace<br> de la page disponible, par defaut elles se mettent les uns en dessous des autres.
+   				<ul>
+   					<li><code><em>&lt;p&gt;&lt;/p&gt;</em></code></li>
+   					<li><code><em>&lt;div&gt;&lt;/div&gt;</em></code></li>
+   					<li><code><em>&lt;table&gt;&lt;/table&gt;</em></code></li>
+   					<li><code><em>&lt;form&gt;&lt;/form&gt;</em></code></li>
+				</ul>
+   			</p>
+   		</article>
+   		<article>
+   			<h3>Les balises de type Inline</h3>
+   			<img src="image/inline.png" alt="image_inline">
+   			<p>Les balises de type inlines sont des balises qui prennent seulement<br> l'espace nécessaire, par defaut elles se placent les uns apres les autres.
+   				<ul>
+   					<li><code><em>&lt;span&gt;&lt;/span&gt;</em></code></li>
+   					<li><code><em>&lt;strong&gt;&lt;/strong&gt;</em></code></li>
+   					<li><code><em>&lt;br&gt;</em></code></li>
+   					<li><code><em>&lt;img&gt;</em></code></li>
+				</ul>
+   			</p>
+   		</article>
+   </section>
+
+   <section class="structure_page">
+   		<article>
+   			<h3>Structurer sa page</h3>
+   			<img src="image/343677.png" alt="image_structure">
+   			<p>Pour mieu structurer sa page, il est necessaire de séparer son code en plusieurs parties:<br>
+   				Le header dans lequel on mettra le contenu de la partie supérieur du site, par exemple le logo ou le slogan.<br>
+   				La nav dans lequel on mettra le menu de navigation, la nav peut egalement se trouver dans le header.<br>
+   				Une section qui permettra de mettre des articles avec un thème commun.<br>
+   				Des articles dans lequel on mettra notre contenue.<br>
+   				Le aside qui permet de mettre des informations complémentaires sur un sujet.<br>
+   				Et pour finir le footer dans lequel on va mettre tous les éléments de la partie inférieur du site.
+   				<ul>
+   					<li><code><em>&lt;header&gt;&lt;/header&gt;</em></code></li>
+   					<li><code><em>&lt;nav&gt;&lt;/nav&gt;</em></code></li>
+   					<li><code><em>&lt;section&gt;&lt;/section&gt;</em></code></li>
+   					<li><code><em>&lt;article&gt;&lt;/article&gt;</em></code></li>
+   					<li><code><em>&lt;aside&gt;&lt;/aside&gt;</em></code></li>
+   					<li><code><em>&lt;footer&gt;&lt;/footer&gt;</em></code></li>
+   				</ul>
+   			</p>
+   		</article>
+
+   </section>
+
+	 <footer>
+  		<div class="footer__Email">
+  			<div class="footer__Row--center">
+  				<a href="mailto:passnum@centre-marseille.fr">passnum@centre-marseille.fr</a>
+  			</div>
+  		</div>
+  		<div class="footerLogo footer__Row--center">
+  			<a class="footerLogo__link" href="https://www.centrale-marseille.fr/"><img src="image/ecole-centrale.png" alt="logo_ecolecentrale"></a>
+  		</div>
+  		<div class="footer__socialNetwork footer__Column--center">
+  			<div class="footer__socialNetwork--center">
+  				<a href=""><img src="image/facebook.png" alt=""></a>
+          		<a href=""><img src="image/twitter.png" alt=""></a>
+  			</div>
+        </div>
+  	</footer>
+ </body>
+</html>

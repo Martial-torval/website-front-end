@@ -1,0 +1,160 @@
+/* Couleur de la nav */
+
+.menu__items > li:nth-child(6n+1) {
+	background: #E44D26;
+}
+
+.menu__items > li:nth-child(6n+1):hover {
+	background: #F16529;
+}
+
+.menu__items > li:nth-child(6n+2) {
+	background: #0170BA;
+}
+
+.menu__items > li:nth-child(6n+2):hover {
+	background: #29A9DF;
+}
+
+.menu__items > li:nth-child(6n+3) {
+	background: #E6A32B;
+}
+
+.menu__items > li:nth-child(6n+3):hover {
+	background: #E6C61D;
+}
+
+.menu__items > li:nth-child(6n+4) {
+	background: #FFB545;
+}
+
+.menu__items > li:nth-child(6n+4):hover {
+	background: #FFC56C;
+}
+
+.menu__items > li:nth-child(6n+5) {
+	background: #880E4F;
+}
+
+.menu__items > li:nth-child(6n+5):hover {
+	background: #B61269;
+}
+
+header {
+  display: flex;
+  width: 100%;
+	padding-bottom: 5%;
+}
+
+header a {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+  display: flex;
+	flex: 15;
+}
+
+.logo {
+	/* Durée animation logo */
+	-webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+		width: 100%;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+  flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  flex: 1;
+}
+
+.logo__container {
+	flex: 1;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.logo__container a {
+	display: flex;
+}
+
+.menu li {
+  flex: 1;
+  position: relative;
+	list-style: none;
+	text-align: center;
+}
+
+.menu__items {
+	margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.menu__items p {
+  padding: 0;
+  margin: 0;
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+.menu__items a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu__items a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.menu img {
+  width: 20%;
+}
+
+.submenu {
+  display: inline-table;
+  transform: scaleY(0);
+  position: absolute;
+  transform-origin: top;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  transition: transform 0.6s ease;
+  width: 100%;
+}
+
+.submenu__html {
+	background: #F16529;
+}
+
+.submenu__css {
+	background: #29A9DF;
+}
+
+.submenu__js {
+	background: #E6C61D;
+}
+
+.submenu__webDesign {
+	background: #FFC56C;
+}
+
+.submenu__framework {
+	background: #B61269;
+}
+
+.menu li:hover p + .submenu {
+  transform: scaleY(1);
+}

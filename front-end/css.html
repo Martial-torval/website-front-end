@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Passerelle Numérique</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="logo__container">
+			<a href="index.html"><img class="logo  bounceInLeft" src="image/logo_cropped.png" alt="logo_passerelle_numerique"></a>
+		</div>
+		<nav>
+			<div class="menu">
+				<ul class="menu__items">
+					<li>
+						<p><a href="html.html">HTML</a></p>
+							<ul class="submenu submenu__html">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+					<li>
+						<p><a href="css.html">CSS</a></p>
+							<ul class="submenu submenu__css">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+					<li>
+						<p><a href="javascript.html">JavaScript</a></p>
+							<ul class="submenu submenu__js">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+					<li>
+						<p><a href="webdesign.html">WebDesign</a></p>
+							<ul class="submenu submenu__webDesign">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+					<li>
+						<p><a href="framework.html">Framework</a></p>
+							<ul class="submenu submenu__framework">
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+								<li>html</li>
+							</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	 <section class="le__CSS">
+      <article id="intro__CSS">
+        <h2>Qu'est-ce que le CSS ?</h2>
+        <div class="intro__CSS--center">
+          <img src="image/CSS_3.svg" alt="Qu'est-ce que le CSS ?">
+          <p>
+            <span class="strong">CSS</span> (<span class="italique souligne"><span class="strong">C</span>ascading</span>
+            <span class="italique souligne"><span class="strong">S</span>tyle</span>
+            <span class="italique souligne"><span class="strong">S</span>heets</span>) est un langage qui définit la façon dont les documents sont présentés aux utilisateurs.
+            Un document est habituellement un fichier texte qui est structuré en utilisant un langage de balises tel que <a class="html" title="HTML" href="#">HTML</a>.
+            Les navigateurs web appliquent des règles <span class="strong">CSS</span> à un document afin que ceux-ci soient affichés correctement.
+            Une règle <span class="strong">CSS</span> est une liste de propriétés associées à un sélecteur. Une liste de règles de <span class="strong">CSS</span> est contenue dans une feuille de style qui définit la mise en forme d'une page.
+            La notion de "<span class="italique souligne">cascade</span>" fait référence aux règles de priorité qui existent entre les différents sélecteur.
+            C'est un aspect très important car on peut "facilement" avoir des milliers de règles <span class="strong">CSS</span> lorsqu'on gère un site complexe.
+          </p>
+        </div>
+      </article>
+      <article id="fonctionnement__CSS">
+        <h3>Le fonctionnement de CSS</h3>
+        <p> Lorsqu'un navigateur affiche un document, il doit combiner le contenu du document
+            avec les règles de mise en forme. Pour cela, il traite le document en <span class="souligne">deux étapes</span> :
+            Le navigateur convertit le contenu <a class="html" href="html.html">HTML</a> et le <span class="strong">CSS</span> dans le <span class="strong italique">DOM</span>
+            (<span class="strong italique souligne">D</span><span class="italique souligne">ocument</span>
+            <span class="strong italique souligne">O</span><span class="italique souligne">bject</span>
+            <span class="strong italique souligne">M</span><span class="italique souligne">odel</span> ou « Modèle objet du document »).
+            Le <span class="strong italique">DOM</span> représente le document dans la mémoire de l'ordinateur.
+            Pour cela il combine le contenu et la mise en forme (<span class="italique souligne">le style</span>).
+            Le navigateur affiche le contenu du <span class="strong italique">DOM</span>.
+        </p>
+        <img src="image/schema_MDN-comment-css-marche.png" alt="MDN Schema">
+      </article>
+      <article id="les-selecteurs__CSS">
+        <h3>Les Sélecteurs</h3>
+        <ul>
+          <li><p class="list-Titles strong">Les selecteurs simples</p>
+            <ul>
+              <li>Les sélecteurs de type <span class="css">nomelement</span></li>
+              <li>Les sélecteurs de classe <span class="css">.classe</span></li>
+              <li>Les sélecteurs d'identifiant <span class="css">#id</span></li>
+              <li>Les sélecteurs universels <span class="css">*</span></li>
+              <li>Les sélecteurs d'attribut <span class="css">[attr=valeur]</span></li>
+            </ul>
+          </li>
+          <li><p class="list-Titles strong">Les combinateurs</p>
+            <ul>
+              <li>Les sélecteurs de voisins directs <span class="css">A + B</span></li>
+              <li>Les sélecteurs de voisins <span class="css">A ~ B</span></li>
+              <li>Les sélecteurs d'éléments fils <span class="css">A > B</span></li>
+              <li>Les sélecteurs d'éléments descendants <span class="css">A B</span></li>
+            </ul>
+          </li>
+          <li><p class="list-Titles strong">Les pseudo-elements</p>
+            <ul>
+              <li><span class="css">::after</span></li>
+              <li><span class="css">::before</span></li>
+              <li><span class="css">::first-letter</span></li>
+              <li><span class="css">::first-line</span></li>
+            </ul>
+          </li>
+          <li><p class="list-Titles strong">Les pseudo-classes standard</p>
+            <ul>
+              <li><span class="css">:active</span></li>
+              <li><span class="css">:checked</span></li>
+              <li><span class="css">:first</span></li>
+              <li><span class="css">:first-child</span></li>
+              <li><span class="css">:first-of-type</span></li>
+              <li><span class="css">:focus</span></li>
+              <li><span class="css">:hover</span></li>
+              <li><span class="css">:last-child</span></li>
+              <li><span class="css">:last-of-type</span></li>
+              <li><span class="css">:not()</span></li>
+              <li><span class="css">:nth-child()</span></li>
+              <li><span class="css">:nth-last-child()</span></li>
+              <li><span class="css">:nth-last-of-type()</span></li>
+              <li><span class="css">:nth-of-type()</span></li>
+              <li><span class="css">:only-child</span></li>
+              <li><span class="css">:only-of-type</span></li>
+              <li><span class="css">:visited</span></li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+
+
+
+	<footer>
+  		<div class="footer__Email">
+  			<div class="footer__Row--center">
+  				<a href="mailto:passnum@centre-marseille.fr">passnum@centre-marseille.fr</a>
+  			</div>
+  		</div>
+  		<div class="footerLogo footer__Row--center">
+  			<a class="footerLogo__link" href="https://www.centrale-marseille.fr/"><img src="image/ecole-centrale.png" alt="logo_ecolecentrale"></a>
+  		</div>
+  		<div class="footer__socialNetwork footer__Column--center">
+  			<div class="footer__socialNetwork--center">
+  				<a href=""><img src="image/facebook.png" alt=""></a>
+          		<a href=""><img src="image/twitter.png" alt=""></a>
+  			</div>
+        </div>
+  	</footer>
+
+</body>
+
+</html>
